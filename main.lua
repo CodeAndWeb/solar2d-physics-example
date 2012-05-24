@@ -1,28 +1,30 @@
 -- 
--- Abstract: Physicsdemo
--- Demonstrates complex body construction by generating 100 random physics objects
+-- Abstract: PhysicsEditor Demo
+--
+-- Demonstrates using PhysicsEditor to create complex collision shapes
 --
 -- This demo loads physics bodies created with http://www.physicseditor.de
 --
--- Code is based on ANSCA's Create demo
+-- Code is based on ANSCA's Crate demo
 -- Sample code is MIT licensed, see http://developer.anscamobile.com/code/license
 -- Copyright (C) 2010 ANSCA Inc. All Rights Reserved.
+--
 
 local physics = require("physics")
 physics.start()
 display.setStatusBar( display.HiddenStatusBar )
 
 -- background shape
-local bkg = display.newImage( "bkg_cor.png" )
+local bkg = display.newImage( "background.png" )
 
 -- load the physics data, scale factor is set to 1.0
 local physicsData = (require "shapedefs").physicsData(1.0)
 
 -- create physical floor shape
-local bar = display.newImage("bar.png")
-bar.x = 160; bar.y = 440
-bar.myName = "bar"
-physics.addBody( bar, "static", physicsData:get("bar") )
+local bar = display.newImage("Floor.png")
+bar.x = 160; bar.y = 450
+bar.myName = "Floor"
+physics.addBody( bar, "static", physicsData:get("Floor") )
 
 -- physics.setDrawMode( "hybrid" )
 
@@ -46,7 +48,7 @@ end
 function newItem()	
     
     -- all items
-	local names = {"orange", "drink", "hamburger", "hotdog", "icecream", "icecream2", "icecream3"};
+	local names = {"Apple_00", "Apple_01", "Apple_02", "Ball", "Duck"};
 
     -- just pick a random one
 	local name = names[math.random(#names)];
@@ -69,4 +71,4 @@ function newItem()
     obj:addEventListener( "collision", obj )
 end
 
-local dropCrates = timer.performWithDelay( 500, newItem, 100 )
+local dropCrates = timer.performWithDelay( 1000, newItem, 100 )
