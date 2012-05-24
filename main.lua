@@ -18,7 +18,7 @@ local physics = require("physics")
 physics.start()
 
 -- background image
-local bkg = display.newImage( "background.png" )
+local bkg = display.newImage( "Background.png" )
 
 -- load the physics data, scale factor is set to 1.0
 local physicsData = (require "shapedefs").physicsData(1.0)
