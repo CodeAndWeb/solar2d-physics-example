@@ -10,11 +10,14 @@
 -- Copyright (C) 2010 ANSCA Inc. All Rights Reserved.
 --
 
-local physics = require("physics")
-physics.start()
+-- init display
 display.setStatusBar( display.HiddenStatusBar )
 
--- background shape
+-- init physics
+local physics = require("physics")
+physics.start()
+
+-- background image
 local bkg = display.newImage( "background.png" )
 
 -- load the physics data, scale factor is set to 1.0
