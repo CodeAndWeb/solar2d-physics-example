@@ -1,9 +1,9 @@
-PhysicsEditor-CoronaSDK
+PhysicsEditor-Solar2D (formerly Corona SDK)
 =======================
 
-Tutorial - PhysicsEditor - CoronaSDK
+Tutorial - PhysicsEditor - Solar2D
 
-The source code is based on the crates demo included in the Corona SDK. 
+The source code is based on the crates demo included in the Solar2D. 
 
 The graphics belong to CodeAndWeb - you must not use them in your own projects without written permission.
 
