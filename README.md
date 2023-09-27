@@ -2,7 +2,7 @@ Solar2D Physics Example
 =======================
 
 <a href="https://www.codeandweb.com/physicseditor/tutorials/how-to-use-game-physics-in-solar2d">
-![Screenshot of demo app](tutorial-image.png)
+<img src="./tutorial-image.png">
 </a>
 
 
