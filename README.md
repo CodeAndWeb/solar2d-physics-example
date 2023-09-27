@@ -1,11 +1,15 @@
-PhysicsEditor-CoronaSDK
+Solar2D Physics Example
 =======================
 
-Tutorial - PhysicsEditor - CoronaSDK
+<a href="https://www.codeandweb.com/physicseditor/tutorials/how-to-use-game-physics-in-solar2d">
+![Screenshot of demo app](tutorial-image.png)
+</a>
 
-The source code is based on the crates demo included in the Corona SDK. 
 
-The graphics belong to CodeAndWeb - you must not use them in your own projects without written permission.
+Sample code which demonstrates how to use game physics in Solar2D.
+Uses [PhysicsEditor](https://www.codeandweb.com/physicseditor) 
+to create complex polygonal collision bodies.
 
-Read the complete tutorial at http://www.codeandweb.com/blog/2012/05/24/getting-started-with-coronasdk-and-physicseditor-tutorial
+A detailed tutorial can be found here:
+[How to use game physics in Solar2D](https://www.codeandweb.com/physicseditor/tutorials/how-to-use-game-physics-in-solar2d).
 
